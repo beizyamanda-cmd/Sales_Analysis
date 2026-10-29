@@ -1,0 +1,69 @@
+DAY 2 SALES ANALYTICS REPORT
+============================
+
+Business: Tech Hub Kenya
+Reporting period: 1 September 2026 – 30 September 2026
+Source: electronics_sales.csv
+Records analyzed: 50
+
+1. EXECUTIVE SUMMARY
+--------------------
+Total sales revenue: KES 1,310,812.00
+
+The notebook calculated revenue from quantity multiplied by unit price. The result was independently checked with Pandas, and the two totals matched.
+
+2. REVENUE BY PRODUCT
+---------------------
+1.  HP 15 Laptop                 KES 389,994.00
+2.  Hisense 43in Smart TV        KES 272,993.00
+3.  Lenovo Tab M10               KES 199,992.00
+4.  Tecno Spark 20               KES 161,988.00
+5.  Infinix Hot 40               KES  63,996.00
+6.  Samsung Galaxy A15           KES  56,997.00
+7.  JBL Go 3 Speaker             KES  49,491.00
+8.  Anker Power Bank 20000       KES  38,691.00
+9.  Xiaomi Redmi Buds            KES  25,592.00
+10. Oraimo FreePods              KES  19,593.00
+11. USB-C Charger 25W            KES  19,487.00
+12. Safaricom Neon Ray           KES  11,998.00
+
+3. REVENUE BY STORE
+-------------------
+Kisumu Mega Plaza               KES 449,678.00
+Nairobi CBD                     KES 331,085.00
+Westgate                        KES 235,979.00
+Mombasa City Mall               KES 154,082.00
+Nakuru Westside                 KES 139,988.00
+
+4. HIGH-VALUE TRANSACTIONS
+--------------------------
+The notebook flags transactions worth KES 100,000 or more. It found 3:
+
+- Sale S-3017 | 10 September 2026 | Kisumu Mega Plaza
+  Product: Hisense 43in Smart TV | Quantity: 4
+  Revenue: KES 155,996.00 | Payment method: M-Pesa
+
+- Sale S-3022 | 13 September 2026 | Nairobi CBD
+  Product: HP 15 Laptop | Quantity: 4
+  Revenue: KES 259,996.00 | Payment method: M-Pesa
+
+- Sale S-3048 | 30 September 2026 | Kisumu Mega Plaza
+  Product: HP 15 Laptop | Quantity: 2
+  Revenue: KES 129,998.00 | Payment method: Card
+
+5. VALIDATION
+-------------
+Pandas total: KES 1,310,812.00
+Manual calculation total: KES 1,310,812.00
+Totals match: True
+
+The notebook also reports matching store revenue totals between the manual calculation and Pandas.
+
+6. RECOMMENDATIONS
+------------------
+- Maintain stock availability for HP 15 Laptops and Hisense Smart TVs, the two highest-revenue products in the notebook's results.
+- Follow up on the three high-value transactions where appropriate.
+- Review store-level performance. Kisumu Mega Plaza recorded the highest revenue in the reported results.
+- Consider adding sales-by-date and payment-method analysis, plus charts, in a future version.
+- Add product cost data if profit and profit-margin analysis is required.
+
